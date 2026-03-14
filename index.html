@@ -59,6 +59,19 @@
         order: 1;              /* 照片放在标题和文字之间 */
         margin-top: 0;         /* 移动端不需要额外偏移 */
     }
+
+    /* 为前三段所在的容器增加左右内边距，控制每行长度 */
+    .profile-left .paragraph,
+    #main-wrap .container > .paragraph {
+        padding-left: 20px;   /* 可根据需要调整数值（如 25px） */
+        padding-right: 20px;
+    }
+
+    /* 确保文字自动换行并避免溢出 */
+    .paragraph {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
 }
         /* 以下保留您原有的所有样式（包括媒体查询中的其他规则） */
         /* 但为了简洁，此处省略重复部分，实际使用时请保留完整原有样式 */
